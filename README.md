@@ -1,4 +1,5 @@
 # AirBnB Clone - The Console
+
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
 #### Functionalities of this command interpreter:
@@ -110,9 +111,4 @@ TestBaseModel class:
 * `def test_pep8_conformance_review(self)` - Test that models/review.py conforms to PEP8
 * `def test_pep8_conformance_test_review(self)` - Test that tests/test_models/test_review.py conforms to PEP8
 * `def test_review_module_docstring(self)` - Test for the review.py module docstring
-* `def test_review_class_docstring(self)` - Test for the Review class docstring
-
-[/test_models/state.py](/tests/test_models/test_state.py) - Contains the TestStateDocs class:
-* `def setUpClass(cls)` - Set up for the doc tests
-* `def test_pep8_conformance_state(self)` - Test that models/state.py conforms to PEP8
-* `def te
+* `def test_review_class_docstring(self)` - T
