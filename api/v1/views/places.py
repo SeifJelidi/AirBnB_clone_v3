@@ -74,7 +74,7 @@ def post_place(city_id):
     abort(400, "Not a JSON")
 
 
-@app_views.route("/cities/<place_id>", methods=["PUT"],
+@app_views.route("/places/<place_id>", methods=["PUT"],
                  strict_slashes=False)
 def put_place(place_id=None):
     """
