@@ -17,7 +17,7 @@ def get_city_by_state(state_id=None):
     l_city = []
     obj = storage.get(State, state_id)
     if obj:
-        for c in obj.cities:
+        for v in obj.cities:
             l_city.append(v.to_dict())
         return jsonify(l_city)
     abort(404)
