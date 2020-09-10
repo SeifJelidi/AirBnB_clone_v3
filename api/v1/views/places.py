@@ -63,7 +63,7 @@ def post_place(city_id):
     if obj_prop:
         if "user_id" not in obj_prop:
             abort(400, "Missing user_id")
-        if storage.get(User, item_info["user_id"]) is None:
+        if storage.get(User, obj_prop["user_id"]) is None:
             abort(400)
         if "name" not in obj_prop:
             abort(400, "Missing name")
