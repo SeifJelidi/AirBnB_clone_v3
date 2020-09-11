@@ -83,12 +83,7 @@ def put_city(city_id=None):
             abort(400, "Not a JSON")
         if obj_prop:
             for k, v in obj_prop.items():
-                if (
-                    k is not "id"
-                    and k is not "state_id"
-                    and k is not "created_at"
-                    and k is not "updated_at"
-                ):
+                if k is not["id", "state_id", "created_at", "updated_at"]:
                     setattr(obj, k, v)
             obj.save()
             return (jsonify(obj.to_dict()))
